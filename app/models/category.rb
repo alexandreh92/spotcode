@@ -8,4 +8,12 @@ class Category < ApplicationRecord
 
   # Validations
   validates :name, presence: true
+
+  def artists
+    Artist.joins(:albums).where(albums: { id: albums.ids }).distinct
+  end
+
+  def songs
+    Song.joins(:album).where(songs: { id: albums.ids }).distinct
+  end
 end
