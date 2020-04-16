@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
 
   scope :api do
-    resources :dashboard, on: :collection, only: [:index]
+    resources :discover, on: :collection, only: [:index]
     resources :categories, on: :collection, only: %i[index show]
     resources :search, on: :collection, only: [:index]
     resources :albums, on: :collection, only: [:show] do

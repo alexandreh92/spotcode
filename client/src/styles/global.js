@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css';
+import 'react-bulma-components/dist/react-bulma-components.min.css';
 
 export default createGlobalStyle`
 
@@ -16,6 +17,7 @@ export default createGlobalStyle`
 
 html, body, #root {
   height: 100%;
+  background-color: hsl(0, 0%, 21%);
 }
 
 body {

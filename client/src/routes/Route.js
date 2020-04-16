@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Redirect } from 'react-router-dom';
 
-// import AuthLayout from '~/layouts/auth';
-// import DefaultLayout from '~/layouts/default';
+import AuthLayout from '~/layouts/Auth';
+import DefaultLayout from '~/layouts/Default';
 
 import { store } from '~/store';
 
@@ -22,15 +22,15 @@ export default function RouteWrapper({
     return <Redirect to="/" />;
   }
 
-  // const Layout = isGuest ? AuthLayout : DefaultLayout;
+  const Layout = isPrivate ? DefaultLayout : AuthLayout;
 
   return (
     <Route
       {...rest}
       render={props => (
-        // <Layout>
-        <Component {...props} />
-        // </Layout>
+        <Layout>
+          <Component {...props} />
+        </Layout>
       )}
     />
   );
