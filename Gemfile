@@ -14,6 +14,7 @@ gem 'devise'
 gem 'devise-jwt'
 gem 'dry-configurable', '0.9.0'
 gem 'faker'
+
 gem 'fog-aws'
 gem 'foreman'
 gem 'pg'

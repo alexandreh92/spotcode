@@ -2,7 +2,7 @@
 
 class Song < ApplicationRecord
   # Uploders
-  mount_uploader :file, FileUploader
+  mount_uploader :file, AudioUploader
 
   # Associations
   belongs_to :album
