@@ -131,8 +131,6 @@ GEM
       mini_magick (>= 4.9.5, < 5)
       ruby-vips (>= 2.0.17, < 3)
     ipaddress (0.8.3)
-    jbuilder (2.10.0)
-      activesupport (>= 5.0.0)
     jwt (2.2.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -239,7 +237,7 @@ GEM
       warden (~> 1.2)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     zeitwerk (2.3.0)
 
 PLATFORMS
@@ -257,7 +255,6 @@ DEPENDENCIES
   faker
   fog-aws
   foreman
-  jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   pg
   pry
